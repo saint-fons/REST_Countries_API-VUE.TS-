@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$mainColor: rgba(250, 250, 250);
+
+.controls_menu {
+  padding-top: 30px;
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-between;
+  background-color: $mainColor;
+
+  .controls_menu_block1 {
+    padding-left: 25px;
+    box-shadow: 5px black;
+  }
+  .controls_menu_block2 {
+    padding-right: 25px;
+  }
+}
+
+.grid {
+  min-height: 100vh;
+  background-color: $mainColor;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  .label {
+    margin: auto;
+    text-align: center;
+  }
+}

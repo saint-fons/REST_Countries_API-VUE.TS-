@@ -1,0 +1,63 @@
+.container {
+  height: 100vh;
+  padding-top: 15px;
+
+  .controls {
+    margin-top: 9%;
+    margin-left: 7%;
+  }
+
+  .container_Info {
+    display: flex;
+    height: 50vh;
+    width: 86%;
+    margin: 8%;
+
+    .container_Info_block1 {
+      width: 45%;
+      height: 50vh;
+      .item_image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .container_Info_block2 {
+      width: 55%;
+      height: 50vh;
+
+      .item_info {
+        width: 80%;
+        height: 62%;
+        margin: 9%;
+
+        .title {
+          font-size: 21px;
+          font-weight: 600;
+        }
+
+        .item_info_list {
+          display: flex;
+          padding-top: 5%;
+
+          .info_list_block1 {
+            width: 50%;
+            height: 25vh;
+          }
+
+          .info_list_block2 {
+            width: 50%;
+            height: 25vh;
+          }
+        }
+      }
+
+      .linkItems {
+        margin-left: 9%;
+
+        .linkItems_items {
+          margin: 0 5px 0 5px;
+        }
+      }
+    }
+  }
+}
