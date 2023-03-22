@@ -38,14 +38,12 @@ import RegionSelector from './Controls/RegionSelector.vue'
 import DisplayCardPage from './DisplayCardPage/DisplayCardPage.vue'
 import ItemCards from './ItemCards/ItemCards.vue'
 import HeaderMenu from './HeaderMenu/HeaderMenu.vue'
-import ControlsMenu from './Controls/ControlsMenu/ControlsMenu.vue'
 
 export default {
     components: {
         ItemCards,
         DisplayCardPage,
         HeaderMenu,
-        ControlsMenu,
         SearchField,
         RegionSelector
     },
@@ -143,7 +141,6 @@ export default {
             try {
                 await axios.get('https://restcountries.com/v3.1/all')
                     .then((response) => {
-                        console.log("response.data", response.data)
                         this.countries = response.data
                         this.displayCountries = response.data
                     })

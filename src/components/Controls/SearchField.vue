@@ -1,6 +1,6 @@
 <template>
     <div class="certain-category-search-wrapper" style="width: 250px">
-        <a-auto-complete v-model:value="value" class="certain-category-search"
+        <a-auto-complete v-model:value="search" class="certain-category-search"
             dropdown-class-name="certain-category-search-dropdown" :dropdown-match-select-width="500" style="width: 250px"
             :options="displayCountries">
             <a-input-search placeholder="Search for country..." size="large"></a-input-search>
@@ -33,21 +33,14 @@ export default {
     components: {
         UserOutlined,
     },
-    /* data() {
-        return {
-
-        }
-    }, */
     data() {
         return {
-            value: ref(this.searchedText),
-            /*  dataSource, */
+            search: ref(this.searchedText),
         };
     },
     watch: {
-        value(newValue) {
-            this.$emit('search', this.value)
-            //console.log("newValue: " + newValue)
+        search() {
+            this.$emit('search', this.search)
         }
     },
 };
