@@ -88,13 +88,7 @@ export default {
     components: {
         ArrowLeftOutlined
     },
-    watch: {
-        displayCountries() {
-            console.log("displayCountries", displayCountries)
-        }
-    },
     mounted() {
-        console.log("displayCountries1", this.displayCountries)
         this.getCurrentItem(this.displayCountries, this.displayCardName)
     },
     methods: {
@@ -106,9 +100,6 @@ export default {
                 return item.name.common === searchedText
             })
             this.currentItem = items[currentItemIndex]
-
-            /*   console.log("languages", languages)
-              console.log("currentItem.name.nativeName.spa.official", this.currentItem.name.official) */
         }
     },
 }

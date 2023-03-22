@@ -13,11 +13,6 @@
                 <DownOutlined />
             </a-button>
         </a-dropdown>
-        <!-- <a-button size="large" href="https://www.google.com">
-            <template #icon>
-                <close-outlined />
-            </template>
-        </a-button> -->
     </div>
 </template>
 <script>
@@ -43,7 +38,6 @@ export default defineComponent({
     setup() {
         const selectedRegion = ref('');
         const handleMenuClick = e => {
-            //console.log("selectedRegion.value", e.key)
             selectedRegion.value = e.key !== selectedRegion.value ? e.key : "";
         };
         return {
